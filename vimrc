@@ -78,7 +78,8 @@ map <C-l> <C-w>l
 " Some Quick Commands
 map <Leader>b :b#<CR>
 map <Leader>, :NERDTreeToggle<CR>
-map <Leader>f :Rfind 
+map <Leader>f :Rfind
+map <Leader>s :! 
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
