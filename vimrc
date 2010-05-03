@@ -79,6 +79,8 @@ map <C-l> <C-w>l
 map <Leader>b :b#<CR>
 map <Leader>, :NERDTreeToggle<CR>
 map <Leader>f :Rfind
+map <Leader>vf :RVfind 
+map <Leader>sf :RSfind 
 map <Leader>s :! 
 
 " Now load any machine specific config
