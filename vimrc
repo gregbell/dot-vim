@@ -68,6 +68,9 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
+filetype plugin indent on " Enable filetype-specific indenting and plugins
+filetype plugin on
+
 " Set the status line
 set statusline=%t\ %M\ %y\ [%l/%L]
 
