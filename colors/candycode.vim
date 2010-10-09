@@ -13,10 +13,10 @@ set cpo&vim
 
 " text 
 
-hi Normal       guifg=#ffffff       guibg=#242424       gui=NONE
+hi Normal       guifg=#ffffff       guibg=#272727       gui=NONE
             \   ctermfg=white       ctermbg=black       cterm=NONE
 
-hi Folded       guifg=#c2bfa5       guibg=#242424       gui=underline
+hi Folded       guifg=#c2bfa5       guibg=#272727      gui=underline
             \   ctermfg=lightgray   ctermbg=black       cterm=underline
 
 hi LineNr       guifg=#928c75       guibg=NONE          gui=NONE
@@ -91,7 +91,7 @@ hi Cursor       guifg=#000000       guibg=#ffff99       gui=NONE
             \   ctermfg=black       ctermbg=white       cterm=NONE
 hi CursorIM     guifg=#000000       guibg=#aaccff       gui=NONE
             \   ctermfg=black       ctermbg=white       cterm=reverse
-hi CursorLine   guifg=NONE          guibg=#1b1b1b       gui=NONE
+hi CursorLine   guifg=NONE          guibg=#222222       gui=NONE
             \   ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi CursorColumn guifg=NONE          guibg=#1b1b1b       gui=NONE
             \   ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -131,7 +131,7 @@ hi WarningMsg   guifg=#ccae22       guibg=NONE          gui=bold
 " 
 " syntax highlighting groups (:help group-name) 
 
-hi Comment      guifg=#ff9922       guibg=NONE          gui=NONE
+hi Comment      guifg=#4C4F4C       guibg=NONE          gui=NONE
             \   ctermfg=brown       ctermbg=NONE        cterm=NONE
 
 hi Constant     guifg=#ff6050       guibg=NONE          gui=NONE

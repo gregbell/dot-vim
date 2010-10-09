@@ -3,6 +3,9 @@ set nocompatible
 set hidden
 set visualbell
 
+" Load Pathogen
+silent! call pathogen#runtime_append_all_bundles()
+
 " Swap locations
 set backupdir=~/.vim_backup
 set directory=~/.vim_backup
@@ -76,6 +79,12 @@ set statusline=%t\ %M\ %y\ [%l/%L]
 
 let mapleader = ","
 
+" Only show 10 files max
+let g:CommandTMaxHeight = 10
+
+" Sort NERDTree by Alpha
+let NERDTreeSortOrder = []
+
 " Quick cycling between windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -85,7 +94,7 @@ map <C-l> <C-w>l
 " Some Quick Commands
 map <Leader>b :b#<CR>
 map <Leader>, :NERDTreeToggle<CR>
-map <Leader>f :Rfind
+map <Leader>f :Rfind 
 map <Leader>vf :RVfind 
 map <Leader>sf :RSfind 
 map <Leader>s :! 
