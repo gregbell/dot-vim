@@ -98,6 +98,7 @@ map <Leader>f :Rfind
 map <Leader>vf :RVfind 
 map <Leader>sf :RSfind 
 map <Leader>s :! 
+map <Leader>l :TlistToggle<CR>
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
