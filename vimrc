@@ -67,7 +67,7 @@ if &t_Co > 2 || has("gui_running")
     set t_Sb=[4%dm
   endif
   " Set the color theme
-  colorscheme candycode
+  colorscheme molokai
   syntax on
 endif
 

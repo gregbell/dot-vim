@@ -32,7 +32,7 @@ hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
 hi String          guifg=#E6DB74
 hi Conditional     guifg=#F92672               gui=bold
-hi Constant        guifg=#AE81FF               gui=bold
+hi Constant        guifg=#AE81FF
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF
@@ -88,8 +88,8 @@ if has("spell")
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
 hi Statement       guifg=#F92672               gui=bold
-hi StatusLine      guifg=#455354 guibg=fg
-hi StatusLineNC    guifg=#808080 guibg=#080808
+hi StatusLine      guifg=#ffffff guibg=#000000
+hi StatusLineNC    guifg=#888888 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=italic
 hi Structure       guifg=#66D9EF
 hi Tag             guifg=#F92672               gui=italic
@@ -100,7 +100,7 @@ hi Typedef         guifg=#66D9EF
 hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#808080               gui=underline
 
-hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
+hi VertSplit       guifg=#1B1D1E guibg=#1B1D1E gui=bold
 hi VisualNOS                     guibg=#403D3D
 hi Visual                        guibg=#403D3D
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
@@ -118,7 +118,7 @@ else
    hi Comment         guifg=#465457
    hi CursorLine                    guibg=#293739
    hi CursorColumn                  guibg=#293739
-   hi LineNr          guifg=#BCBCBC guibg=#232526
+   hi LineNr          guifg=#888888 guibg=#333333
    hi NonText         guifg=#BCBCBC guibg=#232526
 end
 
