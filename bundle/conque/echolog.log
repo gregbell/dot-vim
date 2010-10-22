@@ -1,0 +1,26 @@
+
+Error detected while processing /data/home/nraffo/.vimrc:
+line  206:
+E185: Cannot find color scheme rdark-terminal
+"../conque_all/util/vimball_build.vim" 
+"../conque_all/util/vimball_build.vim" 6L, 93C
+
+"Vimball" [Not edited] --No lines in buffer--
+"autoload/conque_term.vim" 
+"autoload/conque_term.vim" 1966L, 64495C
+"doc/conque_term.txt" 
+"doc/conque_term.txt" 392L, 15054C
+"plugin/conque_term.vim" 
+"plugin/conque_term.vim" 109L, 4208C
+"syntax/conque_term.vim" 
+"syntax/conque_term.vim" 83L, 4839C
+"conque_1.2.vba" 
+"conque_1.2.vba" [New] 2561L, 88795C written
+Vimball<conque_1.2.vba> created
+
+Error detected while processing /data/home/nraffo/.vimrc:
+line  206:
+E185: Cannot find color scheme rdark-terminal
+"conque_1.2.vba" 
+"conque_1.2.vba" 2561L, 88795C
+***vimball***  Source this file to extract it! (:so %)
