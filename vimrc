@@ -52,6 +52,9 @@ set softtabstop=2
 set expandtab
 set nosmarttab
 
+" Tabs for C code
+au FileType objc setlocal shiftwidth=4 softtabstop=4
+
 " ActionScript & MXML
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
