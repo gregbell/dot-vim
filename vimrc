@@ -3,31 +3,6 @@ set nocompatible
 set hidden
 set visualbell
 
-" Override the <Leader>t commands in the Align plugin
-" They are now all available through <Leader>T instead
-map <Leader>T| <Plug>AM_t|
-map <Leader>T#	 <Plug>AM_t#
-map <Leader>T,	 <Plug>AM_t,
-map <Leader>T:	 <Plug>AM_t:
-map <Leader>T;	 <Plug>AM_t;
-map <Leader>T<	 <Plug>AM_t<
-map <Leader>T=	 <Plug>AM_t=
-map <Leader>Ts,	 <Plug>AM_ts,
-map <Leader>Ts:	 <Plug>AM_ts:
-map <Leader>Ts;	 <Plug>AM_ts;
-map <Leader>Ts<	 <Plug>AM_ts<
-map <Leader>Ts=	 <Plug>AM_ts=
-map <Leader>w=	 <Plug>AM_w=
-map <Leader>T?	 <Plug>AM_t?
-map <Leader>T~	 <Plug>AM_t~
-map <Leader>T@	 <Plug>AM_t@
-map <Leader>m=	 <Plug>AM_m=
-map <Leader>tab	 <Plug>AM_tab
-map <Leader>Tml	 <Plug>AM_tml
-map <Leader>Tsp	 <Plug>AM_tsp
-map <Leader>Tsq	 <Plug>AM_tsq
-map <Leader>Tt	 <Plug>AM_tt
-
 " Swap locations
 set backupdir=~/.vim_backup
 set directory=~/.vim_backup
@@ -74,6 +49,9 @@ set softtabstop=2
 set expandtab
 set nosmarttab
 
+filetype plugin indent on " Enable filetype-specific indenting and plugins
+filetype plugin on
+
 " Tabs for C code
 au FileType objc setlocal shiftwidth=4 softtabstop=4
 
@@ -96,13 +74,8 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
-filetype plugin indent on " Enable filetype-specific indenting and plugins
-filetype plugin on
-
 " Set the status line
 set statusline=%t\ %M\ %y\ [%l/%L]
-
-let mapleader = ","
 
 " Only show 10 files max
 let g:CommandTMaxHeight = 10
@@ -124,6 +97,33 @@ map <Leader>vf :RVfind
 map <Leader>sf :RSfind 
 map <Leader>s :! 
 map <Leader>l :TlistToggle<CR>
+
+" Override the <Leader>t commands in the Align plugin
+" They are now all available through <Leader>T instead
+map <Leader>T| <Plug>AM_t|
+map <Leader>T#	 <Plug>AM_t#
+map <Leader>T,	 <Plug>AM_t,
+map <Leader>T:	 <Plug>AM_t:
+map <Leader>T;	 <Plug>AM_t;
+map <Leader>T<	 <Plug>AM_t<
+map <Leader>T=	 <Plug>AM_t=
+map <Leader>Ts,	 <Plug>AM_ts,
+map <Leader>Ts:	 <Plug>AM_ts:
+map <Leader>Ts;	 <Plug>AM_ts;
+map <Leader>Ts<	 <Plug>AM_ts<
+map <Leader>Ts=	 <Plug>AM_ts=
+map <Leader>w=	 <Plug>AM_w=
+map <Leader>T?	 <Plug>AM_t?
+map <Leader>T~	 <Plug>AM_t~
+map <Leader>T@	 <Plug>AM_t@
+map <Leader>m=	 <Plug>AM_m=
+map <Leader>tab	 <Plug>AM_tab
+map <Leader>Tml	 <Plug>AM_tml
+map <Leader>Tsp	 <Plug>AM_tsp
+map <Leader>Tsq	 <Plug>AM_tsq
+map <Leader>Tt	 <Plug>AM_tt
+
+let mapleader = ","
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
