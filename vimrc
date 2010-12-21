@@ -54,6 +54,7 @@ filetype plugin on
 
 " Tabs for C code
 au FileType objc setlocal shiftwidth=4 softtabstop=4
+au FileType objj setlocal shiftwidth=4 softtabstop=4
 
 " ActionScript & MXML
 au BufNewFile,BufRead *.mxml set filetype=mxml
