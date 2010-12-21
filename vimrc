@@ -3,8 +3,30 @@ set nocompatible
 set hidden
 set visualbell
 
-" Load Pathogen
-silent! call pathogen#runtime_append_all_bundles()
+" Override the <Leader>t commands in the Align plugin
+" They are now all available through <Leader>T instead
+map <Leader>T| <Plug>AM_t|
+map <Leader>T#	 <Plug>AM_t#
+map <Leader>T,	 <Plug>AM_t,
+map <Leader>T:	 <Plug>AM_t:
+map <Leader>T;	 <Plug>AM_t;
+map <Leader>T<	 <Plug>AM_t<
+map <Leader>T=	 <Plug>AM_t=
+map <Leader>Ts,	 <Plug>AM_ts,
+map <Leader>Ts:	 <Plug>AM_ts:
+map <Leader>Ts;	 <Plug>AM_ts;
+map <Leader>Ts<	 <Plug>AM_ts<
+map <Leader>Ts=	 <Plug>AM_ts=
+map <Leader>w=	 <Plug>AM_w=
+map <Leader>T?	 <Plug>AM_t?
+map <Leader>T~	 <Plug>AM_t~
+map <Leader>T@	 <Plug>AM_t@
+map <Leader>m=	 <Plug>AM_m=
+map <Leader>tab	 <Plug>AM_tab
+map <Leader>Tml	 <Plug>AM_tml
+map <Leader>Tsp	 <Plug>AM_tsp
+map <Leader>Tsq	 <Plug>AM_tsq
+map <Leader>Tt	 <Plug>AM_tt
 
 " Swap locations
 set backupdir=~/.vim_backup
@@ -107,3 +129,6 @@ map <Leader>l :TlistToggle<CR>
 if filereadable('~/.vim/vimrc-local')
   source ~/.vim/vimrc-local
 endif
+
+" Load Pathogen
+silent! call pathogen#runtime_append_all_bundles()
