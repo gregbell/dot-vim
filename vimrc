@@ -81,24 +81,6 @@ set statusline=%t\ %M\ %y\ [%l/%L]
 " Only show 10 files max
 let g:CommandTMaxHeight = 10
 
-" Sort NERDTree by Alpha
-let NERDTreeSortOrder = []
-
-" Quick cycling between windows
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
-" Some Quick Commands
-map <Leader>b :b#<CR>
-map <Leader>, :NERDTreeToggle<CR>
-map <Leader>f :Rfind 
-map <Leader>vf :RVfind 
-map <Leader>sf :RSfind 
-map <Leader>s :! 
-map <Leader>l :TlistToggle<CR>
-
 " Override the <Leader>t commands in the Align plugin
 " They are now all available through <Leader>T instead
 map <Leader>T| <Plug>AM_t|
@@ -125,6 +107,25 @@ map <Leader>Tsq	 <Plug>AM_tsq
 map <Leader>Tt	 <Plug>AM_tt
 
 let mapleader = ","
+
+" Sort NERDTree by Alpha
+let NERDTreeSortOrder = []
+
+" Quick cycling between windows
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Some Quick Commands
+map <Leader>b :b#<CR>
+map <Leader>, :NERDTreeToggle<CR>
+map <Leader>f :Rfind 
+map <Leader>vf :RVfind 
+map <Leader>sf :RSfind 
+map <Leader>s :! 
+map <Leader>l :TlistToggle<CR>
+
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
