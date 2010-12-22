@@ -109,14 +109,14 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
-   hi CursorLine                    guibg=#3E3D32
+   hi CursorLine                    guibg=#3E3D32 cterm=none
    hi CursorColumn                  guibg=#3E3D32
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#293739
+   hi CursorLine                    guibg=#293739 ctermbg=darkgrey cterm=none
    hi CursorColumn                  guibg=#293739
    hi LineNr          guifg=#888888 guibg=#333333
    hi NonText         guifg=#BCBCBC guibg=#232526
