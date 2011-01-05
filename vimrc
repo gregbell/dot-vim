@@ -132,5 +132,7 @@ if filereadable('~/.vim/vimrc-local')
   source ~/.vim/vimrc-local
 endif
 
+runtime macros/matchit.vim
+
 " Load Pathogen
 silent! call pathogen#runtime_append_all_bundles()
