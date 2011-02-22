@@ -16,6 +16,8 @@ set guioptions-=L
 " Always hide the toolbar
 set guioptions-=T
 
+set mouse=a
+
 " Font Stuff
 set guifont=Bitstream\ Vera\ Sans\ Mono:h12
 set linespace=2
@@ -61,16 +63,17 @@ au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 
 if &t_Co > 2 || has("gui_running")
-  if has("terminfo")
-    set t_Co=16
-    set t_AB=[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm
-    set t_AF=[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm
-  else
-    set t_Co=16
-    set t_Sf=[3%dm
-    set t_Sb=[4%dm
-  endif
-  " Set the color theme
+  "if has("terminfo")
+  "  set t_Co=16
+  "  set t_AB=[%?%p1%{8}%<%t%p1%{40}%+%e%p1%{92}%+%;%dm
+  "  set t_AF=[%?%p1%{8}%<%t%p1%{30}%+%e%p1%{82}%+%;%dm
+  "else
+  "  set t_Co=16
+  "  set t_Sf=[3%dm
+  "  set t_Sb=[4%dm
+  "endif
+  set t_Co=256
+  "" Set the color theme
   colorscheme molokai
   syntax on
 endif
