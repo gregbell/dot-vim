@@ -135,6 +135,14 @@ map <Leader>s :!
 map <Leader>l :TlistToggle<CR>
 map <Leader>z :ZoomWin<CR>
 
+" Unimpaired configuration
+" Bubble single lines
+nmap <C-U> [e
+nmap <C-D> ]e
+" Bubble multiple lines
+vmap <C-U> [egv
+vmap <C-D> ]egv
+
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
