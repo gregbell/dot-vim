@@ -132,6 +132,7 @@ map <Leader>vf :RVfind
 map <Leader>sf :RSfind 
 map <Leader>s :! 
 map <Leader>l :TlistToggle<CR>
+map <Leader>z :ZoomWin<CR>
 
 
 " Now load any machine specific config
