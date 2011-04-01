@@ -55,14 +55,17 @@ set list listchars=tab:\ \ ,trail:·
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 filetype plugin on
 
-" Tabs for C code
+" Custom Indentation
 au FileType objc setlocal shiftwidth=4 softtabstop=4
 au FileType objj setlocal shiftwidth=4 softtabstop=4
+au FileType html setlocal shiftwidth=4 softtabstop=4
+au FileType php setlocal shiftwidth=4 softtabstop=4
 
-" ActionScript & MXML
+" FileTypes
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
 au BufNewFile,BufRead *.j set filetype=objj
+au BufNewFile,BufRead *.feature,*.story set filetype=cucumber
 
 if &t_Co > 2 || has("gui_running")
   "if has("terminfo")
@@ -84,7 +87,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " Set the status line
-set statusline=%t\ %M\ %y\ [%l/%L]
+set statusline=%t\ %M\ %y\ [%l/%L]\ %{fugitive#statusline()}
 
 " Only show 10 files max
 let g:CommandTMaxHeight = 10
@@ -143,6 +146,9 @@ nmap <C-D> ]e
 vmap <C-U> [egv
 vmap <C-D> ]egv
 
+" Enable syntastic syntax checking
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1"
 
 " Now load any machine specific config
 if filereadable('~/.vim/vimrc-local')
