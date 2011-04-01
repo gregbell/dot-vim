@@ -50,6 +50,7 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set nosmarttab
+set list listchars=tab:\ \ ,trail:·
 
 filetype plugin indent on " Enable filetype-specific indenting and plugins
 filetype plugin on
