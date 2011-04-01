@@ -61,6 +61,7 @@ au FileType objj setlocal shiftwidth=4 softtabstop=4
 " ActionScript & MXML
 au BufNewFile,BufRead *.mxml set filetype=mxml
 au BufNewFile,BufRead *.as set filetype=actionscript
+au BufNewFile,BufRead *.j set filetype=objj
 
 if &t_Co > 2 || has("gui_running")
   "if has("terminfo")
@@ -76,6 +77,9 @@ if &t_Co > 2 || has("gui_running")
   "" Set the color theme
   colorscheme molokai
   syntax on
+  " Highlight tabs
+  syntax match Tab /\t/
+  hi Tab gui=underline guibg=#AE81FF ctermbg=135
 endif
 
 " Set the status line
@@ -128,6 +132,7 @@ map <Leader>vf :RVfind
 map <Leader>sf :RSfind 
 map <Leader>s :! 
 map <Leader>l :TlistToggle<CR>
+map <Leader>z :ZoomWin<CR>
 
 
 " Now load any machine specific config
